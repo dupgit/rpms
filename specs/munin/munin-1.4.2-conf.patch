@@ -1,0 +1,12 @@
+diff -Nur munin-1.4.2.orig/master/munin.conf.in munin-1.4.2/master/munin.conf.in
+--- munin-1.4.2.orig/master/munin.conf.in	2009-12-16 15:53:28.000000000 +0100
++++ munin-1.4.2/master/munin.conf.in	2013-03-24 15:03:53.620468055 +0100
+@@ -57,7 +57,7 @@
+ #contact.nagios.command /usr/bin/send_nsca nagios.host.comm -c /etc/nsca.conf
+ 
+ # a simple host tree
+-[@@HOSTNAME@@]
++[localhost]
+     address 127.0.0.1
+     use_node_name yes
+ 
